@@ -11,6 +11,9 @@ package com.mycompany.trekplanner;
 public class TrekPlanner {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        dashboard_v2 dashboard = new dashboard_v2();
+        dashboard.setLocationRelativeTo(null);
+        dashboard.setVisible(true);
+        
     }
 }

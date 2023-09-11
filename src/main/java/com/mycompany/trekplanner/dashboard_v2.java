@@ -26,152 +26,125 @@ public class dashboard_v2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
+        dashboardframe = new javax.swing.JPanel();
+        db_treklabel2 = new javax.swing.JLabel();
+        db_plannerlabel2 = new javax.swing.JLabel();
+        treklabel1 = new javax.swing.JLabel();
+        create_trek_button = new javax.swing.JButton();
+        my_profile_button = new javax.swing.JButton();
+        join_trek_button = new javax.swing.JButton();
+        db_bgimage = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Dashboard");
         setLocation(new java.awt.Point(50, 50));
-        setMaximumSize(new java.awt.Dimension(600, 600));
-        setMinimumSize(new java.awt.Dimension(600, 600));
+        setMaximumSize(new java.awt.Dimension(1080, 720));
+        setMinimumSize(new java.awt.Dimension(1080, 720));
         setName("dashboard"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(700, 500));
+        setPreferredSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setMaximumSize(new java.awt.Dimension(1080, 720));
-        jPanel1.setMinimumSize(new java.awt.Dimension(1080, 720));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1080, 720));
-        jPanel1.setLayout(null);
+        dashboardframe.setMaximumSize(new java.awt.Dimension(1080, 720));
+        dashboardframe.setMinimumSize(new java.awt.Dimension(1080, 720));
+        dashboardframe.setPreferredSize(new java.awt.Dimension(1080, 720));
+        dashboardframe.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
-        jLabel1.setText("DASHBOARD");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 10, 149, 45);
+        db_treklabel2.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
+        db_treklabel2.setText("DASHBOARD");
+        dashboardframe.add(db_treklabel2);
+        db_treklabel2.setBounds(20, 10, 149, 45);
 
-        jLabel3.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
-        jLabel3.setText("PLANNER");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(30, 120, 150, 56);
+        db_plannerlabel2.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
+        db_plannerlabel2.setText("PLANNER");
+        dashboardframe.add(db_plannerlabel2);
+        db_plannerlabel2.setBounds(30, 120, 150, 56);
 
-        jLabel2.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
-        jLabel2.setText("TREK");
-        jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 80, 91, 52);
+        treklabel1.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 36)); // NOI18N
+        treklabel1.setText("TREK");
+        treklabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        dashboardframe.add(treklabel1);
+        treklabel1.setBounds(30, 80, 91, 52);
 
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(130, 150, 100, 50);
-
-        jButton2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton2.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
-        jButton2.setText("CREATE A TREK");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        create_trek_button.setBackground(new java.awt.Color(204, 255, 255));
+        create_trek_button.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        create_trek_button.setText("CREATE A TREK");
+        create_trek_button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        create_trek_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                create_trek_buttonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2);
-        jButton2.setBounds(10, 350, 170, 70);
-        jButton2.getAccessibleContext().setAccessibleParent(jLabel5);
+        dashboardframe.add(create_trek_button);
+        create_trek_button.setBounds(20, 350, 170, 70);
 
-        jButton3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton3.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
-        jButton3.setText("MY PROFILE ");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        my_profile_button.setBackground(new java.awt.Color(204, 255, 255));
+        my_profile_button.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        my_profile_button.setText("MY PROFILE ");
+        my_profile_button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        my_profile_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                my_profile_buttonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3);
-        jButton3.setBounds(200, 350, 210, 70);
+        dashboardframe.add(my_profile_button);
+        my_profile_button.setBounds(200, 350, 210, 70);
 
-        jButton1.setBackground(new java.awt.Color(204, 255, 255));
-        jButton1.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
-        jButton1.setText("JOIN A TREK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        join_trek_button.setBackground(new java.awt.Color(204, 255, 255));
+        join_trek_button.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        join_trek_button.setText("JOIN A TREK");
+        join_trek_button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        join_trek_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                join_trek_buttonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(420, 350, 190, 70);
+        dashboardframe.add(join_trek_button);
+        join_trek_button.setBounds(420, 350, 190, 70);
+        dashboardframe.add(db_bgimage);
+        db_bgimage.setBounds(230, 100, 0, 0);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/dashboard_2.jpg"))); // NOI18N
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, -10, 720, 520);
-        jLabel5.getAccessibleContext().setAccessibleParent(jLabel5);
-
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 729, 515);
+        getContentPane().add(dashboardframe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 450));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void join_trek_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_join_trek_buttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        dashboard_v2.this.dispose();
+        createtrekA join_trek = new createtrekA();
+        join_trek.setVisible(true);
+        
+        
+    }//GEN-LAST:event_join_trek_buttonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void create_trek_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_create_trek_buttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        
+        
+    }//GEN-LAST:event_create_trek_buttonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void my_profile_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_my_profile_buttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        dashboard_v2.this.dispose();
+        profile create_profile = new profile();
+        create_profile.setVisible(true);
+       
+    }//GEN-LAST:event_my_profile_buttonActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(dashboard_v2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(dashboard_v2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(dashboard_v2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(dashboard_v2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new dashboard_v2().setVisible(true);
-            }
-        });
-    }
+     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton create_trek_button;
+    private javax.swing.JPanel dashboardframe;
+    private javax.swing.JLabel db_bgimage;
+    private javax.swing.JLabel db_plannerlabel2;
+    private javax.swing.JLabel db_treklabel2;
+    private javax.swing.JButton join_trek_button;
+    private javax.swing.JButton my_profile_button;
+    private javax.swing.JLabel treklabel1;
     // End of variables declaration//GEN-END:variables
 }
