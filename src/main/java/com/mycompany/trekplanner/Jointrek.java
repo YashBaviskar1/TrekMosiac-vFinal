@@ -2,6 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+package com.mycompany.trekplanner;
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -49,7 +52,7 @@ public class Jointrek extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         lblimgname = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        get_enrolledbutton = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
 
@@ -86,6 +89,10 @@ public class Jointrek extends javax.swing.JFrame {
         jLabel2.setText("DATES AVAILABLE");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 119, 20));
 
+        jList1.setBackground(new java.awt.Color(102, 102, 102));
+        jList1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jList1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jList1.setForeground(new java.awt.Color(255, 255, 255));
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "24th Thursday", "25th Friday", "30th Saturday" };
             public int getSize() { return strings.length; }
@@ -93,17 +100,21 @@ public class Jointrek extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jList1);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 180, 42));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 150, 20));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("PEOPLE ENROLLED");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 84, -1, 23));
 
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(102, 102, 102));
         jTextArea1.setColumns(5);
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(4);
         jTextArea1.setText("Transportation :-\nPrivate Vehicle from Neral Station to fort & back.\nMeeting at Neral Station by 08:00 am.");
         jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextArea1.setFocusable(false);
         jTextArea1.setMaximumSize(new java.awt.Dimension(289, 90));
         jTextArea1.setMinimumSize(new java.awt.Dimension(289, 90));
@@ -114,12 +125,15 @@ public class Jointrek extends javax.swing.JFrame {
 
         jScrollPane4.setOpaque(false);
 
-        jTextArea2.setBackground(new java.awt.Color(204, 255, 255));
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(102, 102, 102));
         jTextArea2.setColumns(10);
-        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jTextArea2.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
+        jTextArea2.setForeground(new java.awt.Color(102, 102, 102));
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(8);
         jTextArea2.setText("Short Itinerary:-\n08.00 am - Meeting at Neral Station and Have Tea & Breakfast.\n09:00 am - Proceed Towards the base & Start the journey towards top after the introduction session & necessary instructions.\n\nAfter reaching the top, exploring around, having lunch and spending time with new friends, we will start our journey to base.\n\nProceed to Neral, have tasty evening snacks & back to Mumbai with Trekkers Tribe Memories.");
+        jTextArea2.setWrapStyleWord(true);
         jTextArea2.setOpaque(false);
         jScrollPane4.setViewportView(jTextArea2);
 
@@ -134,69 +148,92 @@ public class Jointrek extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(693, 113, 307, 55));
 
+        jTextArea5.setBackground(new java.awt.Color(153, 153, 153));
         jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
         jTextArea5.setLineWrap(true);
         jTextArea5.setRows(5);
         jTextArea5.setText("Important: All our explorations are nature-friendly. Smoking and consumption of alcohol is strictly prohibited. If anyone found doing the same, will be debarred without refund from the exploration.  TREKKERS TRIBE decision will be final & binding on all participants at all time. No arguments shall be entertained.");
+        jTextArea5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane7.setViewportView(jTextArea5);
 
-        jPanel2.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 545, 610, -1));
+        jPanel2.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 610, -1));
 
+        jTextArea4.setBackground(new java.awt.Color(102, 102, 102));
         jTextArea4.setColumns(20);
+        jTextArea4.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
         jTextArea4.setText("Exclusions✖:-\nTravel till Neral.\nLunch.\nPersonal expenses.\nInsurance of any kind.\nMedical hospitalization, evacuation, and related expenses.\nAny item not covered under INCLUSIONS.");
+        jTextArea4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane6.setViewportView(jTextArea4);
 
         jPanel2.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 491, -1, 36));
 
+        jTextArea3.setBackground(new java.awt.Color(102, 102, 102));
         jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
+        jTextArea3.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
         jTextArea3.setText("Inclusions✔:-\nTransport from Neral to Fort and vice versa.\nTea & Breakfast in the morning.\nEvening Snacks.\nSafety and First Aid. \nTrekkers Tribe Expertise.\nEntry Charges (if any)");
+        jTextArea3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane5.setViewportView(jTextArea3);
 
         jPanel2.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, 36));
 
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Difficulty Level : Easy to moderate");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 210, 30));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 230, 30));
 
         jButton1.setBackground(new java.awt.Color(153, 204, 255));
         jButton1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 51, 204));
         jButton1.setText("BACK");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(102, 204, 255)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 240, 180, 50));
 
-        lblimgname.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/resized 2.jpeg"))); // NOI18N
+        lblimgname.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resized 2.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addComponent(lblimgname, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblimgname, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblimgname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 160, 160));
 
-        jButton2.setBackground(new java.awt.Color(153, 204, 255));
-        jButton2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 51, 204));
-        jButton2.setText("GET ENROLLED");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(102, 204, 255)));
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 180, 180, 50));
+        get_enrolledbutton.setBackground(new java.awt.Color(153, 204, 255));
+        get_enrolledbutton.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
+        get_enrolledbutton.setForeground(new java.awt.Color(0, 51, 204));
+        get_enrolledbutton.setText("GET ENROLLED");
+        get_enrolledbutton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(102, 204, 255)));
+        get_enrolledbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                get_enrolledbuttonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(get_enrolledbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 180, 180, 50));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 710, 10));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/bgmtresizeddddd.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpict.jpg"))); // NOI18N
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 720));
 
         getContentPane().add(jPanel2);
@@ -205,44 +242,30 @@ public class Jointrek extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Jointrek.this.dispose();
+        createtrekA join = new createtrekA();
+        join.setLocationRelativeTo(null);
+        join.setVisible(true);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void get_enrolledbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_enrolledbuttonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, """
+                                            Enrollment Confirmed!! 
+                                             Details sent on registered email adress!""");
+    }//GEN-LAST:event_get_enrolledbuttonActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Jointrek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Jointrek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Jointrek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Jointrek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Jointrek().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton get_enrolledbutton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

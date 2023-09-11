@@ -46,7 +46,7 @@ public class createtrekA extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         datelist1 = new javax.swing.JList<>();
         buttinfo1 = new javax.swing.JButton();
-        buttjoin1 = new javax.swing.JButton();
+        infobutton = new javax.swing.JButton();
         lbljointrek = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
@@ -121,7 +121,7 @@ public class createtrekA extends javax.swing.JFrame {
 
         jPanel1.add(panelMumbai, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 120, 30));
 
-        lbldevkund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/resizeddevkund.jpeg"))); // NOI18N
+        lbldevkund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resizeddevkund.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout pandevkundLayout = new javax.swing.GroupLayout(pandevkund);
         pandevkund.setLayout(pandevkundLayout);
@@ -175,7 +175,7 @@ public class createtrekA extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 510, 130, 30));
 
-        lblpebimage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/createtrek/resized 2.jpeg"))); // NOI18N
+        lblpebimage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resized 2.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout panpebimage2Layout = new javax.swing.GroupLayout(panpebimage2);
         panpebimage2.setLayout(panpebimage2Layout);
@@ -222,12 +222,22 @@ public class createtrekA extends javax.swing.JFrame {
         buttinfo1.setBackground(new java.awt.Color(204, 255, 255));
         buttinfo1.setText("JOIN");
         buttinfo1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102), new java.awt.Color(204, 255, 255)));
+        buttinfo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttinfo1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(buttinfo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 80, 30));
 
-        buttjoin1.setBackground(new java.awt.Color(204, 255, 255));
-        buttjoin1.setText("INFO");
-        buttjoin1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102), new java.awt.Color(204, 255, 255)));
-        jPanel1.add(buttjoin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 80, 30));
+        infobutton.setBackground(new java.awt.Color(204, 255, 255));
+        infobutton.setText("INFO");
+        infobutton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102), new java.awt.Color(204, 255, 255)));
+        infobutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                infobuttonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(infobutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 80, 30));
 
         lbljointrek.setBackground(new java.awt.Color(153, 255, 255));
         lbljointrek.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 24)); // NOI18N
@@ -245,10 +255,15 @@ public class createtrekA extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(0, 51, 204));
         jButton1.setText("BACK");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(102, 204, 255)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 610, 180, 30));
 
-        lblBgrnd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/trekplanner/bgmtresizeddddd.jpg"))); // NOI18N
-        jPanel1.add(lblBgrnd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 1230, 760));
+        lblBgrnd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bgmtresizeddddd.jpg"))); // NOI18N
+        jPanel1.add(lblBgrnd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1230, 760));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -268,6 +283,30 @@ public class createtrekA extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        createtrekA.this.dispose();
+        dashboard_v2 db = new dashboard_v2();
+        db.setLocationRelativeTo(null);
+        db.setVisible(true);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void buttinfo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttinfo1ActionPerformed
+        // TODO add your handling code here:
+        createtrekA.this.dispose();
+        Jointrek join_page = new Jointrek();
+        join_page.setLocationRelativeTo(null);
+        join_page.setVisible(true);
+    }//GEN-LAST:event_buttinfo1ActionPerformed
+
+    private void infobuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infobuttonActionPerformed
+        // TODO add your handling code here:
+        createtrekA.this.dispose();
+        info info_page = new info();
+        info_page.setLocationRelativeTo(null);
+        info_page.setVisible(true);
+    }//GEN-LAST:event_infobuttonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -277,9 +316,9 @@ public class createtrekA extends javax.swing.JFrame {
     private javax.swing.JButton buttinfo;
     private javax.swing.JButton buttinfo1;
     private javax.swing.JButton buttjoin;
-    private javax.swing.JButton buttjoin1;
     private javax.swing.JList<String> datelist;
     private javax.swing.JList<String> datelist1;
+    private javax.swing.JButton infobutton;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
