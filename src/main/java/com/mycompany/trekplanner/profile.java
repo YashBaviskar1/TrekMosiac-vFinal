@@ -42,6 +42,7 @@ public class profile extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        verifybutton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -136,6 +137,15 @@ public class profile extends javax.swing.JFrame {
         jPanel1.add(jLabel10);
         jLabel10.setBounds(50, 570, 135, 22);
 
+        verifybutton.setText("VERIFY PROFILE");
+        verifybutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verifybuttonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(verifybutton);
+        verifybutton.setBounds(600, 110, 130, 30);
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpict.jpg"))); // NOI18N
         jLabel2.setToolTipText("");
         jPanel1.add(jLabel2);
@@ -156,6 +166,14 @@ public class profile extends javax.swing.JFrame {
         dashboard_v2 dashboard = new dashboard_v2();
         dashboard.setVisible(true); 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void verifybuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verifybuttonActionPerformed
+        // TODO add your handling code here:
+        profile.this.dispose();
+        Verification verify = new Verification();
+        verify.setLocationRelativeTo(null);
+        verify.setVisible(true);
+    }//GEN-LAST:event_verifybuttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,5 +198,6 @@ public class profile extends javax.swing.JFrame {
     private java.awt.TextArea textArea1;
     private java.awt.TextArea textArea2;
     private javax.swing.JLabel usernametext;
+    private javax.swing.JButton verifybutton;
     // End of variables declaration//GEN-END:variables
 }

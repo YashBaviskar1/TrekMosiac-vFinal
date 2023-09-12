@@ -261,7 +261,7 @@ public class createtrekA extends javax.swing.JFrame {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 610, 180, 30));
 
         lblBgrnd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bgmtresizeddddd.jpg"))); // NOI18N
-        jPanel1.add(lblBgrnd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1230, 760));
+        jPanel1.add(lblBgrnd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1080, 720));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -299,7 +299,7 @@ public class createtrekA extends javax.swing.JFrame {
 
     private void infobuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infobuttonActionPerformed
         // TODO add your handling code here:
-        createtrekA.this.dispose();
+        
         info info_page = new info();
         info_page.setLocationRelativeTo(null);
         info_page.setVisible(true);

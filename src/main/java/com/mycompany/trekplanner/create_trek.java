@@ -45,7 +45,7 @@ public class create_trek extends javax.swing.JFrame {
         lblpassword = new javax.swing.JLabel();
         lblusername = new javax.swing.JLabel();
         jtextusername = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        loginButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jtextpassword = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
@@ -53,7 +53,6 @@ public class create_trek extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
         getContentPane().setLayout(null);
@@ -184,18 +183,18 @@ public class create_trek extends javax.swing.JFrame {
         jPanel3.add(jtextusername);
         jtextusername.setBounds(140, 110, 130, 41);
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
-        jButton1.setFont(new java.awt.Font("Sitka Subheading", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("login");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        loginButton.setBackground(new java.awt.Color(153, 153, 153));
+        loginButton.setFont(new java.awt.Font("Sitka Subheading", 0, 18)); // NOI18N
+        loginButton.setForeground(new java.awt.Color(255, 255, 255));
+        loginButton.setText("login");
+        loginButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                loginButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1);
-        jButton1.setBounds(140, 240, 110, 50);
+        jPanel3.add(loginButton);
+        loginButton.setBounds(140, 240, 110, 50);
         jPanel3.add(jLabel3);
         jLabel3.setBounds(311, 8, 0, 32);
         jPanel3.add(jtextpassword);
@@ -243,20 +242,21 @@ public class create_trek extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jtextusernameActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         String username = jtextusername.getText();
         String password = jtextpassword.getText();
         if("user".equals(username) && "123456".equals(password))
         {
-          create_trek.this.dispose();
+        create_trek.this.dispose();
         createtrekA join_trek = new createtrekA();
+        join_trek.setLocationRelativeTo(null); 
         join_trek.setVisible(true);
         } 
         else
         {
             JOptionPane.showMessageDialog(this, "Invalid username or password.");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_loginButtonActionPerformed
 
     private void jbtregisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtregisterActionPerformed
         // TODO add your handling code here:
@@ -272,7 +272,6 @@ public class create_trek extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -299,5 +298,6 @@ public class create_trek extends javax.swing.JFrame {
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lblregister;
     private javax.swing.JLabel lblusername;
+    private javax.swing.JButton loginButton;
     // End of variables declaration//GEN-END:variables
 }

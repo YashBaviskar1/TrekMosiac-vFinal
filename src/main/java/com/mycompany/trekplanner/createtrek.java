@@ -36,18 +36,18 @@ public class createtrek extends javax.swing.JFrame {
         jlabeltransportation = new javax.swing.JLabel();
         jlabelinfo = new javax.swing.JLabel();
         jlbinclusion = new javax.swing.JLabel();
-        jTextitinary = new javax.swing.JTextField();
-        jTexttransportation = new javax.swing.JTextField();
-        jTextheight = new javax.swing.JTextField();
-        jTextinclusion = new javax.swing.JTextField();
-        jTextinfo = new javax.swing.JTextField();
+        itinaryField = new javax.swing.JTextField();
+        transportationNameField = new javax.swing.JTextField();
+        heightNameField = new javax.swing.JTextField();
+        inclusionsNameField = new javax.swing.JTextField();
+        infoNameField = new javax.swing.JTextField();
         jlbtrekname = new javax.swing.JLabel();
         jlbprice = new javax.swing.JLabel();
-        jTextprice = new javax.swing.JTextField();
+        priceField = new javax.swing.JTextField();
         jlblocation1 = new javax.swing.JLabel();
-        jTextlocation1 = new javax.swing.JTextField();
-        jTextlocation2 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        trekNameField = new javax.swing.JTextField();
+        locNameField = new javax.swing.JTextField();
+        confirmbutton = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -97,47 +97,59 @@ public class createtrek extends javax.swing.JFrame {
         jPanel1.add(jlbinclusion);
         jlbinclusion.setBounds(170, 450, 182, 47);
 
-        jTextitinary.addActionListener(new java.awt.event.ActionListener() {
+        itinaryField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextitinaryActionPerformed(evt);
+                itinaryFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextitinary);
-        jTextitinary.setBounds(349, 384, 228, 47);
+        jPanel1.add(itinaryField);
+        itinaryField.setBounds(349, 384, 228, 47);
 
-        jTexttransportation.addActionListener(new java.awt.event.ActionListener() {
+        transportationNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTexttransportationActionPerformed(evt);
+                transportationNameFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTexttransportation);
-        jTexttransportation.setBounds(349, 312, 228, 47);
+        jPanel1.add(transportationNameField);
+        transportationNameField.setBounds(349, 312, 228, 47);
 
-        jTextheight.addActionListener(new java.awt.event.ActionListener() {
+        heightNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextheightActionPerformed(evt);
+                heightNameFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextheight);
-        jTextheight.setBounds(349, 238, 228, 47);
-        jPanel1.add(jTextinclusion);
-        jTextinclusion.setBounds(349, 456, 228, 49);
-        jPanel1.add(jTextinfo);
-        jTextinfo.setBounds(349, 541, 228, 47);
+        jPanel1.add(heightNameField);
+        heightNameField.setBounds(349, 238, 228, 47);
+
+        inclusionsNameField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inclusionsNameFieldActionPerformed(evt);
+            }
+        });
+        jPanel1.add(inclusionsNameField);
+        inclusionsNameField.setBounds(349, 456, 228, 49);
+        jPanel1.add(infoNameField);
+        infoNameField.setBounds(349, 541, 228, 47);
 
         jlbtrekname.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
         jlbtrekname.setForeground(new java.awt.Color(255, 255, 255));
         jlbtrekname.setText("Name of trek ");
         jPanel1.add(jlbtrekname);
-        jlbtrekname.setBounds(170, 120, 182, 47);
+        jlbtrekname.setBounds(160, 100, 182, 47);
 
         jlbprice.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
         jlbprice.setForeground(new java.awt.Color(255, 255, 255));
         jlbprice.setText("price");
         jPanel1.add(jlbprice);
         jlbprice.setBounds(150, 610, 182, 47);
-        jPanel1.add(jTextprice);
-        jTextprice.setBounds(349, 615, 228, 47);
+
+        priceField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                priceFieldActionPerformed(evt);
+            }
+        });
+        jPanel1.add(priceField);
+        priceField.setBounds(349, 615, 228, 47);
 
         jlblocation1.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
         jlblocation1.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,34 +157,34 @@ public class createtrek extends javax.swing.JFrame {
         jPanel1.add(jlblocation1);
         jlblocation1.setBounds(170, 170, 182, 47);
 
-        jTextlocation1.addActionListener(new java.awt.event.ActionListener() {
+        trekNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextlocation1ActionPerformed(evt);
+                trekNameFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextlocation1);
-        jTextlocation1.setBounds(350, 100, 228, 47);
+        jPanel1.add(trekNameField);
+        trekNameField.setBounds(350, 100, 228, 47);
 
-        jTextlocation2.addActionListener(new java.awt.event.ActionListener() {
+        locNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextlocation2ActionPerformed(evt);
+                locNameFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextlocation2);
-        jTextlocation2.setBounds(349, 173, 228, 47);
+        jPanel1.add(locNameField);
+        locNameField.setBounds(349, 173, 228, 47);
 
-        jButton2.setBackground(new java.awt.Color(102, 102, 102));
-        jButton2.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("CONFIRM");
-        jButton2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        confirmbutton.setBackground(new java.awt.Color(102, 102, 102));
+        confirmbutton.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
+        confirmbutton.setForeground(new java.awt.Color(255, 255, 255));
+        confirmbutton.setText("CONFIRM");
+        confirmbutton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        confirmbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                confirmbuttonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2);
-        jButton2.setBounds(720, 230, 120, 40);
+        jPanel1.add(confirmbutton);
+        confirmbutton.setBounds(720, 230, 120, 40);
 
         jButton4.setBackground(new java.awt.Color(102, 102, 102));
         jButton4.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
@@ -196,25 +208,27 @@ public class createtrek extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTexttransportationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTexttransportationActionPerformed
+    private void transportationNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transportationNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTexttransportationActionPerformed
+    }//GEN-LAST:event_transportationNameFieldActionPerformed
 
-    private void jTextheightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextheightActionPerformed
+    private void heightNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_heightNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextheightActionPerformed
+    }//GEN-LAST:event_heightNameFieldActionPerformed
 
-    private void jTextitinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextitinaryActionPerformed
+    private void itinaryFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itinaryFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextitinaryActionPerformed
+    }//GEN-LAST:event_itinaryFieldActionPerformed
 
-    private void jTextlocation1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextlocation1ActionPerformed
+    private void trekNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trekNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextlocation1ActionPerformed
+       
+        
+    }//GEN-LAST:event_trekNameFieldActionPerformed
 
-    private void jTextlocation2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextlocation2ActionPerformed
+    private void locNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextlocation2ActionPerformed
+    }//GEN-LAST:event_locNameFieldActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
@@ -225,12 +239,62 @@ public class createtrek extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void confirmbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmbuttonActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, """
-                                            Details sent for review!! 
-                                            you will be reached by email""");
-    }//GEN-LAST:event_jButton2ActionPerformed
+      String enteredName = trekNameField.getText(); 
+      String enteredLocation = locNameField.getText();
+      String enteredHeight = heightNameField.getText();
+      String enteredTransportationName = transportationNameField.getText();
+      String enteredItinary = itinaryField.getText();
+      String enteredInclusionsName = inclusionsNameField.getText();
+      String enteredInfoName = infoNameField.getText();
+      String enteredPrice = priceField.getText();
+      
+      
+      TrekData.setTrekname(enteredName);
+      TrekData.setLocName(enteredLocation);
+      TrekData.setHeightName(enteredHeight);
+      TrekData.setTransportationName(enteredTransportationName);
+      TrekData.setItinary(enteredItinary);
+      TrekData.setinclusionsName(enteredInclusionsName);
+      TrekData.setinfoName(enteredInfoName);
+      TrekData.setPrice(enteredPrice);
+      
+      
+      String trekName = TrekData.getTrekname();
+      String locName = TrekData.getLocName();
+      String heightName = TrekData.getHeightName();
+      String transportationName = TrekData.getTransportationName();
+      String itinary = TrekData.getItinary();
+      String inclusionsName = TrekData.getInclusionsName();
+      String infoName = TrekData.getinfoName();
+      String price = TrekData.getPrice();
+      
+      DisplayCreateTrek display = new DisplayCreateTrek();
+      DisplayCreateTrek.trekNameDisplayLabel.setText("Name of Trek : " + trekName);
+      DisplayCreateTrek.locNameDisplayLabel.setText("Location of trek : " + locName );
+      DisplayCreateTrek.heightNameDisplayLabel.setText("Height : " + heightName);
+      DisplayCreateTrek.transportationNameDisplayLabel.setText("Transportation : " + transportationName);
+      DisplayCreateTrek.itinaryDisplayLabel.setText("Short Itiary : " + itinary);
+      DisplayCreateTrek.inclusionsNameDisplayLabel.setText("Inclusions : " + inclusionsName);
+      DisplayCreateTrek.infoNameDisplayLabel.setText("Information about Trek : " + infoName);
+      DisplayCreateTrek.priceDisplayLabel.setText("Price : " + price);
+      
+      display.setLocationRelativeTo(null);
+      display.setVisible(true);
+      
+      
+      
+      
+    }//GEN-LAST:event_confirmbuttonActionPerformed
+
+    private void inclusionsNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inclusionsNameFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_inclusionsNameFieldActionPerformed
+
+    private void priceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_priceFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_priceFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,19 +302,15 @@ public class createtrek extends javax.swing.JFrame {
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton confirmbutton;
+    private javax.swing.JTextField heightNameField;
+    private javax.swing.JTextField inclusionsNameField;
+    private javax.swing.JTextField infoNameField;
+    private javax.swing.JTextField itinaryField;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLblcreate_trek;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextheight;
-    private javax.swing.JTextField jTextinclusion;
-    private javax.swing.JTextField jTextinfo;
-    private javax.swing.JTextField jTextitinary;
-    private javax.swing.JTextField jTextlocation1;
-    private javax.swing.JTextField jTextlocation2;
-    private javax.swing.JTextField jTextprice;
-    private javax.swing.JTextField jTexttransportation;
     private javax.swing.JLabel jlabelinfo;
     private javax.swing.JLabel jlabeltransportation;
     private javax.swing.JLabel jlabitinary;
@@ -259,5 +319,9 @@ public class createtrek extends javax.swing.JFrame {
     private javax.swing.JLabel jlblocation1;
     private javax.swing.JLabel jlbprice;
     private javax.swing.JLabel jlbtrekname;
+    private javax.swing.JTextField locNameField;
+    private javax.swing.JTextField priceField;
+    private javax.swing.JTextField transportationNameField;
+    private javax.swing.JTextField trekNameField;
     // End of variables declaration//GEN-END:variables
 }

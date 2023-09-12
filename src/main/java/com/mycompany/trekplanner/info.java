@@ -42,7 +42,7 @@ public class info extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1080, 720));
         getContentPane().setLayout(null);
 
-        Ttrekinfotext.setBackground(new java.awt.Color(153, 153, 153));
+        Ttrekinfotext.setBackground(new java.awt.Color(51, 204, 255));
         Ttrekinfotext.setMaximumSize(new java.awt.Dimension(1080, 720));
         Ttrekinfotext.setMinimumSize(new java.awt.Dimension(1080, 720));
         Ttrekinfotext.setPreferredSize(new java.awt.Dimension(1080, 720));
@@ -85,26 +85,25 @@ public class info extends javax.swing.JFrame {
         TtrekinfotextLayout.setHorizontalGroup(
             TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TtrekinfotextLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(TtrekinfotextLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(TtrekinfotextLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
                         .addGroup(TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(TtrekinfotextLayout.createSequentialGroup()
-                                .addGap(188, 188, 188)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(TtrekinfotextLayout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addGroup(TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel4)))))
-                    .addGroup(TtrekinfotextLayout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(224, Short.MAX_VALUE))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TtrekinfotextLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(424, 424, 424))))
         );
         TtrekinfotextLayout.setVerticalGroup(
             TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,15 +118,21 @@ public class info extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TtrekinfotextLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(28, Short.MAX_VALUE))
+                    .addGroup(TtrekinfotextLayout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel4)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                        .addGroup(TtrekinfotextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(TtrekinfotextLayout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addComponent(jLabel4)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TtrekinfotextLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(62, 62, 62))))))
         );
 
         getContentPane().add(Ttrekinfotext);
