@@ -52,9 +52,7 @@ public class createtrek extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1020, 720));
-        setPreferredSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -153,7 +151,7 @@ public class createtrek extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextlocation1);
-        jTextlocation1.setBounds(349, 111, 228, 47);
+        jTextlocation1.setBounds(350, 100, 228, 47);
 
         jTextlocation2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

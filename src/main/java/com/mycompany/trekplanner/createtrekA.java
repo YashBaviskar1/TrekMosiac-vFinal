@@ -57,9 +57,7 @@ public class createtrekA extends javax.swing.JFrame {
         lblBgrnd = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
-        setPreferredSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
@@ -98,7 +96,7 @@ public class createtrekA extends javax.swing.JFrame {
         panelMumbai.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         panelMumbai.setForeground(new java.awt.Color(255, 255, 255));
 
-        lblMumbai.setBackground(new java.awt.Color(255, 255, 255));
+        lblMumbai.setBackground(new java.awt.Color(156, 153, 153));
         lblMumbai.setFont(new java.awt.Font("Dubai", 1, 18)); // NOI18N
         lblMumbai.setForeground(new java.awt.Color(0, 153, 153));
         lblMumbai.setText("MUMBAI");

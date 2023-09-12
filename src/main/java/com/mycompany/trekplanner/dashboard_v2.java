@@ -26,6 +26,12 @@ public class dashboard_v2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        loginpopup = new javax.swing.JDialog();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        backb = new javax.swing.JButton();
+        loginb1 = new javax.swing.JButton();
+        bglabel = new javax.swing.JLabel();
         db_treklabel2 = new javax.swing.JLabel();
         treklabel1 = new javax.swing.JLabel();
         db_plannerlabel2 = new javax.swing.JLabel();
@@ -35,6 +41,46 @@ public class dashboard_v2 extends javax.swing.JFrame {
         info_trek_button = new javax.swing.JButton();
         about_us = new javax.swing.JButton();
         db_bgimage = new javax.swing.JLabel();
+
+        loginpopup.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        loginpopup.setAlwaysOnTop(true);
+        loginpopup.setResizable(false);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("LOGIN TO JOIN TREK ");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 220, 40));
+
+        backb.setBackground(new java.awt.Color(204, 204, 204));
+        backb.setText("BACK");
+        backb.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        backb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(backb, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 70, 30));
+
+        loginb1.setBackground(new java.awt.Color(204, 204, 204));
+        loginb1.setText("LOGIN ");
+        loginb1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        loginb1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginb1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(loginb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 70, 30));
+
+        bglabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Desktop\\yASH\\TRK_PLANNER_PICS\\a-minimalists-journey-compact-backpack-and-global-compass-atop-a-map-4oku3ll0cpolv5vb.jpg")); // NOI18N
+        bglabel.setMaximumSize(new java.awt.Dimension(350, 350));
+        bglabel.setMinimumSize(new java.awt.Dimension(350, 350));
+        bglabel.setPreferredSize(new java.awt.Dimension(350, 300));
+        jPanel1.add(bglabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        loginpopup.getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Dashboard");
@@ -178,6 +224,14 @@ public class dashboard_v2 extends javax.swing.JFrame {
         
     }//GEN-LAST:event_about_usActionPerformed
 
+    private void backbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backbActionPerformed
+
+    private void loginb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginb1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_loginb1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -185,12 +239,18 @@ public class dashboard_v2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton about_us;
+    private javax.swing.JButton backb;
+    private javax.swing.JLabel bglabel;
     private javax.swing.JButton create_trek_button;
     private javax.swing.JLabel db_bgimage;
     private javax.swing.JLabel db_plannerlabel2;
     private javax.swing.JLabel db_treklabel2;
     private javax.swing.JButton info_trek_button;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton join_trek_button1;
+    private javax.swing.JButton loginb1;
+    private javax.swing.JDialog loginpopup;
     private javax.swing.JButton my_profile_button;
     private javax.swing.JLabel treklabel1;
     // End of variables declaration//GEN-END:variables

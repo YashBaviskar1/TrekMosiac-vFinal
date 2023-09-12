@@ -45,9 +45,7 @@ public class profile extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
-        setPreferredSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -107,7 +105,7 @@ public class profile extends javax.swing.JFrame {
         myprofiletext.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         myprofiletext.setText("MY PROFILE");
         jPanel1.add(myprofiletext);
-        myprofiletext.setBounds(20, 60, 120, 40);
+        myprofiletext.setBounds(20, 50, 120, 40);
 
         agetext.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         agetext.setText("age : ");
