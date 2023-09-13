@@ -48,7 +48,7 @@ public class createtrek extends javax.swing.JFrame {
         trekNameField = new javax.swing.JTextField();
         locNameField = new javax.swing.JTextField();
         confirmbutton = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        homeButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -186,17 +186,17 @@ public class createtrek extends javax.swing.JFrame {
         jPanel1.add(confirmbutton);
         confirmbutton.setBounds(720, 230, 120, 40);
 
-        jButton4.setBackground(new java.awt.Color(102, 102, 102));
-        jButton4.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("HOME");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        homeButton.setBackground(new java.awt.Color(102, 102, 102));
+        homeButton.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
+        homeButton.setForeground(new java.awt.Color(255, 255, 255));
+        homeButton.setText("HOME");
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                homeButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4);
-        jButton4.setBounds(720, 290, 120, 40);
+        jPanel1.add(homeButton);
+        homeButton.setBounds(720, 290, 120, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpict.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -230,14 +230,14 @@ public class createtrek extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_locNameFieldActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
         // TODO add your handling code here:
         createtrek.this.dispose();
         dashboard_v2 db = new dashboard_v2();
         db.setLocationRelativeTo(null);
         db.setVisible(true);
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_homeButtonActionPerformed
 
     private void confirmbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmbuttonActionPerformed
         // TODO add your handling code here:
@@ -304,10 +304,10 @@ public class createtrek extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton confirmbutton;
     private javax.swing.JTextField heightNameField;
+    private javax.swing.JButton homeButton;
     private javax.swing.JTextField inclusionsNameField;
     private javax.swing.JTextField infoNameField;
     private javax.swing.JTextField itinaryField;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLblcreate_trek;
     private javax.swing.JPanel jPanel1;

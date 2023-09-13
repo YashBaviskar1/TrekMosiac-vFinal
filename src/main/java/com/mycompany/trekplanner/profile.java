@@ -57,12 +57,12 @@ public class profile extends javax.swing.JFrame {
 
         textArea1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(textArea1);
-        textArea1.setBounds(120, 320, 550, 99);
+        textArea1.setBounds(120, 320, 500, 80);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         jLabel5.setText("location : ");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(160, 200, 90, 20);
+        jLabel5.setBounds(150, 180, 90, 20);
 
         jButton4.setText("home");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +86,7 @@ public class profile extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(590, 580, 110, 40);
         jPanel1.add(textArea2);
-        textArea2.setBounds(120, 440, 550, 110);
+        textArea2.setBounds(120, 440, 500, 80);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel6.setText("Past Treks : ");
@@ -106,12 +106,12 @@ public class profile extends javax.swing.JFrame {
         myprofiletext.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         myprofiletext.setText("MY PROFILE");
         jPanel1.add(myprofiletext);
-        myprofiletext.setBounds(20, 50, 120, 40);
+        myprofiletext.setBounds(20, 30, 120, 50);
 
         agetext.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         agetext.setText("age : ");
         jPanel1.add(agetext);
-        agetext.setBounds(160, 150, 52, 25);
+        agetext.setBounds(150, 150, 52, 25);
 
         blankpfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EMPTY_PFP.png"))); // NOI18N
         jPanel1.add(blankpfp);
@@ -164,6 +164,7 @@ public class profile extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         profile.this.dispose();
         dashboard_v2 dashboard = new dashboard_v2();
+        dashboard.setLocationRelativeTo(null);
         dashboard.setVisible(true); 
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -4,6 +4,8 @@
  */
 package com.mycompany.trekplanner;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author main
@@ -32,14 +34,13 @@ public class Verification extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        verifyButton = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        homeButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
-        setPreferredSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -71,12 +72,29 @@ public class Verification extends javax.swing.JFrame {
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 493, 139));
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, 206, 47));
 
-        jButton1.setText("Verify");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 120, 50));
+        verifyButton.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
+        verifyButton.setText("Verify");
+        verifyButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        verifyButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verifyButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(verifyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 380, 100, 30));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel4.setText("                1-2 processing days to verify");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 460, 328, 31));
+
+        homeButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        homeButton.setText("HOME");
+        homeButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 100, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bgmtresizeddddd.jpg"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 730));
@@ -90,6 +108,20 @@ public class Verification extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void verifyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verifyButtonActionPerformed
+        // TODO add your handling code here:
+        UserData.verify = 1;
+        JOptionPane.showMessageDialog(this, "Your Profile has been verified");
+    }//GEN-LAST:event_verifyButtonActionPerformed
+
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
+        // TODO add your handling code here:
+        Verification.this.dispose();
+        dashboard_v2 db = new dashboard_v2();
+        db.setLocationRelativeTo(null);
+        db.setVisible(true);
+    }//GEN-LAST:event_homeButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,7 +159,7 @@ public class Verification extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -136,5 +168,6 @@ public class Verification extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton verifyButton;
     // End of variables declaration//GEN-END:variables
 }

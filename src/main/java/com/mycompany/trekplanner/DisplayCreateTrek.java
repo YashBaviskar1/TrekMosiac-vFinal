@@ -4,6 +4,8 @@
  */
 package com.mycompany.trekplanner;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ADMIN
@@ -37,7 +39,7 @@ public class DisplayCreateTrek extends javax.swing.JFrame {
         inclusionsNameDisplayLabel = new javax.swing.JLabel();
         infoNameDisplayLabel = new javax.swing.JLabel();
         priceDisplayLabel = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        confirmButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
@@ -131,8 +133,13 @@ public class DisplayCreateTrek extends javax.swing.JFrame {
         priceDisplayLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153), 3));
         jPanel1.add(priceDisplayLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 461, 600, 40));
 
-        jButton1.setText("CONFIRM AND SEND FOR REVIEW");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 520, 230, 50));
+        confirmButton.setText("CONFIRM AND SEND FOR REVIEW");
+        confirmButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(confirmButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 520, 230, 50));
 
         jButton2.setText("BACK");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -158,17 +165,22 @@ public class DisplayCreateTrek extends javax.swing.JFrame {
         ct_menu.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void confirmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmButtonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Details sent for Review!! \n You will be reached throrugh email");
+    }//GEN-LAST:event_confirmButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton confirmButton;
     public static javax.swing.JLabel heightNameDisplayLabel;
     public static javax.swing.JLabel inclusionsNameDisplayLabel;
     public static javax.swing.JLabel infoNameDisplayLabel;
     public static javax.swing.JLabel itinaryDisplayLabel;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

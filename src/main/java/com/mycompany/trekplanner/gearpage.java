@@ -4,6 +4,8 @@
  */
 package com.mycompany.trekplanner;
 
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -43,11 +45,13 @@ public class gearpage extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        backPackButton = new javax.swing.JButton();
+        headLampButton = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        shoeResntButton = new javax.swing.JButton();
+        costButton = new javax.swing.JLabel();
+        purchaseButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,7 +64,7 @@ public class gearpage extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/headlampresizes.png"))); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(231, 199));
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 140, 80));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 140, 90));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bag resized.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 270, -1, 170));
@@ -128,22 +132,27 @@ public class gearpage extends javax.swing.JFrame {
         jLabel16.setText("A hands-free torch to help you ");
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jButton1.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
-        jButton1.setText("RENT ");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        backPackButton.setBackground(new java.awt.Color(204, 204, 255));
+        backPackButton.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
+        backPackButton.setText("RENT ");
+        backPackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        backPackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                backPackButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 450, 90, 40));
+        jPanel1.add(backPackButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 450, 90, 40));
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 255));
-        jButton2.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
-        jButton2.setText("RENT ");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 90, 40));
+        headLampButton.setBackground(new java.awt.Color(204, 204, 255));
+        headLampButton.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
+        headLampButton.setText("RENT ");
+        headLampButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        headLampButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                headLampButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(headLampButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 90, 40));
 
         jButton3.setBackground(new java.awt.Color(102, 102, 255));
         jButton3.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
@@ -155,39 +164,63 @@ public class gearpage extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 620, 130, 40));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 520, 90, 30));
 
         jLabel17.setFont(new java.awt.Font("Swis721 Blk BT", 0, 48)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("RENT GEARS");
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(204, 204, 255));
-        jButton4.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
-        jButton4.setText("RENT ");
-        jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 90, 40));
+        shoeResntButton.setBackground(new java.awt.Color(204, 204, 255));
+        shoeResntButton.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
+        shoeResntButton.setText("RENT ");
+        shoeResntButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        shoeResntButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                shoeResntButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(shoeResntButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 90, 40));
+
+        costButton.setText("Total Cost : Rs 0/-");
+        costButton.setOpaque(true);
+        jPanel1.add(costButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, 150, 40));
+
+        purchaseButton.setBackground(new java.awt.Color(102, 102, 255));
+        purchaseButton.setFont(new java.awt.Font("Swis721 BlkEx BT", 0, 12)); // NOI18N
+        purchaseButton.setForeground(new java.awt.Color(255, 255, 255));
+        purchaseButton.setText("purchase");
+        purchaseButton.setToolTipText("");
+        purchaseButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        purchaseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                purchaseButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(purchaseButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 520, 100, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bgmtresizeddddd.jpg"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1080, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 720));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1121, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 732, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void backPackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backPackButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        UserData.cost += 50;
+        costButton.setText(" Total Cost : Rs. " + UserData.cost + "/-");
+    }//GEN-LAST:event_backPackButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -198,15 +231,32 @@ public class gearpage extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void headLampButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_headLampButtonActionPerformed
+        // TODO add your handling code here:
+        UserData.cost += 25;
+        costButton.setText(" Total Cost : Rs. " + UserData.cost + "/-");
+    }//GEN-LAST:event_headLampButtonActionPerformed
+
+    private void shoeResntButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shoeResntButtonActionPerformed
+        // TODO add your handling code here:
+        UserData.cost += 180;
+        costButton.setText(" Total Cost : Rs. " + UserData.cost + "/-");
+    }//GEN-LAST:event_shoeResntButtonActionPerformed
+
+    private void purchaseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_purchaseButtonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "purchase details sent on email");
+    }//GEN-LAST:event_purchaseButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
   
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton backPackButton;
+    private javax.swing.JLabel costButton;
+    private javax.swing.JButton headLampButton;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -225,5 +275,7 @@ public class gearpage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton purchaseButton;
+    private javax.swing.JButton shoeResntButton;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,6 +4,8 @@
  */
 package com.mycompany.trekplanner;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ADMIN
@@ -40,8 +42,8 @@ public class dashboard_v2 extends javax.swing.JFrame {
         join_trek_button1 = new javax.swing.JButton();
         info_trek_button = new javax.swing.JButton();
         about_us = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        signInCheck = new javax.swing.JLabel();
+        gearButton = new javax.swing.JButton();
+        loginButton = new javax.swing.JButton();
         db_bgimage = new javax.swing.JLabel();
 
         loginpopup.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -172,22 +174,27 @@ public class dashboard_v2 extends javax.swing.JFrame {
         });
         getContentPane().add(about_us, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 10, 70, 20));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jButton1.setText("RENT GEAR");
-        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        gearButton.setBackground(new java.awt.Color(204, 204, 204));
+        gearButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        gearButton.setText("RENT GEAR");
+        gearButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        gearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                gearButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 90, 30));
+        getContentPane().add(gearButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 90, 30));
 
-        signInCheck.setBackground(new java.awt.Color(255, 255, 255));
-        signInCheck.setFont(new java.awt.Font("Segoe UI Symbol", 2, 12)); // NOI18N
-        signInCheck.setText("YOU ARE NOT SIGNED IN !!");
-        signInCheck.setOpaque(true);
-        getContentPane().add(signInCheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 120, 150, 30));
+        loginButton.setBackground(new java.awt.Color(204, 204, 204));
+        loginButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        loginButton.setText("SIGN IN ");
+        loginButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 90, 90, 30));
 
         db_bgimage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboardimg.png"))); // NOI18N
         db_bgimage.setMaximumSize(new java.awt.Dimension(1080, 720));
@@ -208,26 +215,47 @@ public class dashboard_v2 extends javax.swing.JFrame {
 
     private void create_trek_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_create_trek_buttonActionPerformed
         // TODO add your handling code here:
+        if(UserData.check == 1 && UserData.verify == 1){
+             
         dashboard_v2.this.dispose();
-        create_trek login = new create_trek();
-        login.setVisible(true);
-        
+        createtrek createTrek = new createtrek();
+        createTrek.setLocationRelativeTo(null);
+        createTrek.setVisible(true);
+        }
+        else 
+        {
+            if(UserData.check == 0)
+            {
+                JOptionPane.showMessageDialog(this, "Register or Sign to Continue.");
+            }
+            else if(UserData.verify == 0)
+                    {
+                JOptionPane.showMessageDialog(this, "Vetify your profile to create trek");
+                    }
+        }
     }//GEN-LAST:event_create_trek_buttonActionPerformed
 
     private void my_profile_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_my_profile_buttonActionPerformed
         // TODO add your handling code here:
         dashboard_v2.this.dispose();
         profile create_profile = new profile();
+        create_profile.setLocationRelativeTo(null);
         create_profile.setVisible(true);
        
     }//GEN-LAST:event_my_profile_buttonActionPerformed
 
     private void join_trek_button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_join_trek_button1ActionPerformed
         // TODO add your handling code here:
+        if(UserData.check == 1){
         dashboard_v2.this.dispose();
-        create_trek login2  = new create_trek();
-        login2.setLocationRelativeTo(null);
-        login2.setVisible(true);
+        createtrekA joinTrek  = new createtrekA();
+        joinTrek.setLocationRelativeTo(null);
+        joinTrek.setVisible(true);
+        }
+        else 
+        {
+            JOptionPane.showMessageDialog(this, "Register or Sign to continue.");
+        }
     }//GEN-LAST:event_join_trek_button1ActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
@@ -251,13 +279,27 @@ public class dashboard_v2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_loginb1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void gearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gearButtonActionPerformed
         // TODO add your handling code here:
+        if(UserData.check == 1){
         dashboard_v2.this.dispose();
         gearpage gear = new gearpage();
         gear.setLocationRelativeTo(null);
         gear.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+      }
+        else 
+        {
+            JOptionPane.showMessageDialog(this, "Register or sign in to continue.");
+        }
+    }//GEN-LAST:event_gearButtonActionPerformed
+
+    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+        // TODO add your handling code here:
+        dashboard_v2.this.dispose();
+        login signIn = new login();
+        signIn.setLocationRelativeTo(null);
+        signIn.setVisible(true);
+    }//GEN-LAST:event_loginButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -272,15 +314,15 @@ public class dashboard_v2 extends javax.swing.JFrame {
     private javax.swing.JLabel db_bgimage;
     private javax.swing.JLabel db_plannerlabel2;
     private javax.swing.JLabel db_treklabel2;
+    private javax.swing.JButton gearButton;
     private javax.swing.JButton info_trek_button;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton join_trek_button1;
+    private javax.swing.JButton loginButton;
     private javax.swing.JButton loginb1;
     private javax.swing.JDialog loginpopup;
     private javax.swing.JButton my_profile_button;
-    private static javax.swing.JLabel signInCheck;
     private javax.swing.JLabel treklabel1;
     // End of variables declaration//GEN-END:variables
 }
